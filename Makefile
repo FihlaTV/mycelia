@@ -29,7 +29,7 @@ OBJS = 	barabasigenerator.o erdosgenerator.o wattsgenerator.o \
 
 # boost
 CFLAGS += -I $(BASEDIR)/include/boost
-LINKFLAGS += -lboost_system-mt -lboost_regex-mt
+LINKFLAGS += -lboost_system -lboost_regex
 
 # ftgl font renderer
 CFLAGS += -I $(BASEDIR)/include/freetype2
