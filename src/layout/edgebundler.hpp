@@ -28,7 +28,7 @@
 #define STEPSIZE_0          0.04
 #define ITERATIONS_0        50
 #define MAX_CYCLE           5
-#define K                   1.5     // higher = less bundling
+#define _K                  1.5     // higher = less bundling
 
 class EdgeBundler : public GraphLayout
 {

@@ -77,7 +77,7 @@ void EdgeBundler::layoutStep()
 {
     for(int firstEdge = 0; firstEdge < (int)application->g->getEdgeCount(); firstEdge++)
     {
-        Vrui::Scalar k_p = K / Geometry::abs(application->g->getSourceNodePosition(firstEdge) - application->g->getTargetNodePosition(firstEdge));
+        Vrui::Scalar k_p = _K / Geometry::abs(application->g->getSourceNodePosition(firstEdge) - application->g->getTargetNodePosition(firstEdge));
         
         for(int segment = 1; *getSegment(firstEdge, segment) != application->g->getTargetNodePosition(firstEdge); segment++)
         {
